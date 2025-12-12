@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заметки Lite</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 700px; margin: 20px auto; }
+        form { margin-bottom: 20px; display: flex; flex-direction: column; gap: 10px; }
+        input, textarea { padding: 8px; font-size: 16px; }
+        button { padding: 6px 12px; cursor: pointer; }
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 12px; padding: 10px; border: 1px solid #ccc; }
+        li button { margin-top: 8px; }
+    </style>
+</head>
+<body>
+
+    <h2>Мини-Заметочник</h2>
+
+    <form id="note-form">
+        <input id="note-title" type="text" placeholder="Заголовок" required>
+        <textarea id="note-text" placeholder="Текст заметки" rows="3" required></textarea>
+        <button type="submit">Добавить</button>
+    </form>
+
+    <ul id="note-list"></ul>
+
+    <script src="storage.js"></script>
+    <script src="ui.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
